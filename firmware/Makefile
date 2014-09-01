@@ -33,6 +33,8 @@ else ifdef CONFIG_MACH_MSM8974_G3_CN
 synaptics_img_file := $(wildcard $(srctree)/firmware/synaptics/g3_cn/*)
 else ifdef CONFIG_MACH_MSM8974_G3_CA
 synaptics_img_file := $(wildcard $(srctree)/firmware/synaptics/g3_ca/*)
+else ifdef CONFIG_MACH_MSM8974_G3_TMO_US
+synaptics_img_file := $(wildcard $(srctree)/firmware/synaptics/g3_tmo_us/*)
 else
 synaptics_img_file := $(wildcard $(srctree)/firmware/synaptics/g3_tmo_us/*)
 endif
